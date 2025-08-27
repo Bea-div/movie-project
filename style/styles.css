@@ -102,8 +102,13 @@ footer a {
 }
 
 .img-responsive {
-  max-width: 100%;
+  width: 100%;
   display: block;
+}
+
+.embed {
+  width: 100%;
+  aspect-ratio: 1 /1.5;
 }
 
 main {
@@ -171,6 +176,10 @@ main p {
   padding: 30px;
 }
 
+.card-header.grid {
+  grid-gap: 0;
+}
+
 @media (max-width: 960px) {
   header {
     padding: 60px 0;
@@ -191,5 +200,13 @@ main p {
 
   section {
     padding: 30px 0;
+  }
+
+  .card-header img {
+    display: none;
+  }
+
+  .embed {
+    aspect-ratio: 16 /9;
   }
 }
